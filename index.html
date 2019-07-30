@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>160216Board</title>
+	<style>
+		.BBg00{
+			width: 25%;
+			/*height: 600px;*/
+			background-color: #f9f9f9;
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+			float: left;
+		}
+
+		.BBgPurple{background-color: #7f2b8b;}
+		.BBgPurpleDeep{background-color: #201b63;}
+		.BBgPurpleLight{background-color: #5a318d;}
+
+		.BBgOrange{background-color: #e0922f;}
+		.BBgOranDeep{background-color: #cb2128;}
+		.BBgOranLight{background-color: #d35b2d;}
+
+		.BBgYellow{background-color: #d3ca47;}
+		.BBgYelDeep{background-color: #afad2e;}
+		.BBgYelLight{background-color: #c7c53e;}
+
+		.BBgBlue{background-color: #7ad0cb;}
+		.BBgBlueDeep{background-color: #5da39c;}
+		.BBgBlueLight{background-color: #70bfb7;}
+
+		.BTriangle{
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 150px 0 150px;
+			/*左右相加為BBg00的width*/
+		}
+		.W100{
+			width: 100%;
+		}
+
+/*BOX & Triangle*/
+		.BTriPur,
+		.BTriOran,
+		.BTriYel,
+		.BTriBlue{
+			height: 150px;
+		    position: relative;
+		}
+		.BTriPur:after,
+		.BTriOran:after,
+		.BTriYel:after,
+		.BTriBlue:after{
+		    content: "";
+		    position: absolute;
+		    top: 100%;
+		    left: 0; 
+		    right: 0;
+		    padding-bottom: 15%;
+		    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+		    z-index: -1;
+		 }
+	 .BTriPur:after{background-color: #7f2b8b;}
+	 .BTriOran:after{background-color: #e0922f;}
+	 .BTriYel:after{background-color: #d3ca47;}
+	 .BTriBlue:after{background-color: #7ad0cb;}
+/*BOX & Triangle_END*/
+		.BBg02{
+			height: 100px;
+			overflow: hidden;
+			position: relative;
+		}
+		.BBg03{
+			height: 50px;
+		}
+		.BWhiteBg{
+			width: 200px;
+			height: 200px;
+			background-color: rgba(255,255,255, .3);
+			/*outline: solid;*/
+			position: absolute;
+			left: -100px;
+			transform: rotate(45deg);
+			z-index: 1;
+		}
+		.BTitle01{
+			height: 60px;
+			font-size: 60px;
+			font-weight: bold;
+			color: #fff;
+			letter-spacing: 2px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			text-align: center;
+			z-index: 2;
+		}
+		.BTitle02{
+			height: 60px;
+			font-size: 5vw;
+			font-weight: bold;
+			color: #fff;
+			letter-spacing: 2px;
+			margin: auto;
+			margin-top: 10px;
+			text-align: center;
+			z-index: 2;
+		}
+		.BText{
+			padding: 20px;
+			padding-top: 80px;
+			box-sizing: border-box;
+			line-height: 25px;
+			letter-spacing: 1px;
+		}
+		.BBtn{
+			width: 60%;
+			height: 50px;
+			margin: auto;
+			position: relative;
+			overflow: hidden;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.BBtnText{
+			height: 20px;
+			font-size: 20px;
+			color: #fff;
+			letter-spacing: 2px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			text-align: center;
+			z-index: 2;
+			/*outline: solid;*/
+		}
+		.BUnderline01{
+			height: 15px;
+			margin-bottom: 10px;
+		}
+		.BUnderline02{
+			height: 25px;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="BBg00">
+	<div class="BTriPur W100 BBgPurple">
+		<div class="BBg02 W100 BBgPurpleDeep">
+			<div class="BTitle01">Mon</div>
+			<div class="BWhiteBg"></div>
+			<div class="BBg03 W100 BBgPurpleLight"></div>
+		</div>
+		<div class="BTitle02">START</div>
+	</div>
+	<!-- <div class="BTriangle BTriPur"></div> -->
+	<div class="BText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates rem, dicta reprehenderit velit est, reiciendis optio facilis doloribus ea hic tempora, et excepturi enim? Temporibus eum animi mollitia nam, vitae?</div>
+	<div class="BBtn BBgPurpleDeep">
+		<div class="BBtnText">Buy Now!</div>
+		<div class="BWhiteBg"></div>
+	</div>
+	<div class="BUnderline01 W100 BBgPurple"></div>
+	<div class="BUnderline02 W100 BBgPurple"></div>
+</div>
+
+
+<div class="BBg00">
+	<div class="BTriOran W100 BBgOrange">
+		<div class="BBg02 W100 BBgOranDeep">
+			<div class="BTitle01">Tue</div>
+			<div class="BWhiteBg"></div>
+			<div class="BBg03 W100 BBgOranLight"></div>
+		</div>
+		<div class="BTitle02">START</div>
+	</div>
+	<!-- <div class="BTriangle BTriPur"></div> -->
+	<div class="BText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates rem, dicta reprehenderit velit est, reiciendis optio facilis doloribus ea hic tempora, et excepturi enim? Temporibus eum animi mollitia nam, vitae?</div>
+	<div class="BBtn BBgOranDeep">
+		<div class="BBtnText">Buy Now!</div>
+		<div class="BWhiteBg"></div>
+	</div>
+	<div class="BUnderline01 W100 BBgOrange"></div>
+	<div class="BUnderline02 W100 BBgOrange"></div>
+</div>
+
+
+<div class="BBg00">
+	<div class="BTriYel W100 BBgYellow">
+		<div class="BBg02 W100 BBgYelDeep">
+			<div class="BTitle01">Wed</div>
+			<div class="BWhiteBg"></div>
+			<div class="BBg03 W100 BBgYelLight"></div>
+		</div>
+		<div class="BTitle02">START</div>
+	</div>
+	<!-- <div class="BTriangle BTriPur"></div> -->
+	<div class="BText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates rem, dicta reprehenderit velit est, reiciendis optio facilis doloribus ea hic tempora, et excepturi enim? Temporibus eum animi mollitia nam, vitae?</div>
+	<div class="BBtn BBgYelDeep">
+		<div class="BBtnText">Buy Now!</div>
+		<div class="BWhiteBg"></div>
+	</div>
+	<div class="BUnderline01 W100 BBgYellow"></div>
+	<div class="BUnderline02 W100 BBgYellow"></div>
+</div>
+
+
+<div class="BBg00">
+	<div class="BTriBlue W100 BBgBlue">
+		<div class="BBg02 W100 BBgBlueDeep">
+			<div class="BTitle01">Thu</div>
+			<div class="BWhiteBg"></div>
+			<div class="BBg03 W100 BBgBlueLight"></div>
+		</div>
+		<div class="BTitle02">START</div>
+	</div>
+	<!-- <div class="BTriangle BTriPur"></div> -->
+	<div class="BText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates rem, dicta reprehenderit velit est, reiciendis optio facilis doloribus ea hic tempora, et excepturi enim? Temporibus eum animi mollitia nam, vitae?</div>
+	<div class="BBtn BBgBlueDeep">
+		<div class="BBtnText">Buy Now!</div>
+		<div class="BWhiteBg"></div>
+	</div>
+	<div class="BUnderline01 W100 BBgBlue"></div>
+	<div class="BUnderline02 W100 BBgBlue"></div>
+</div>
+
+</body>
+</html>

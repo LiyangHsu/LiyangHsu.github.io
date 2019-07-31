@@ -84,3 +84,4 @@ $(document).ready(function() {
     filterList.init();
 
 })(jQuery); // End of use strict
+

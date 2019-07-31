@@ -169,7 +169,7 @@ hr.colored {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  /*background-color: rgba(0, 0, 0, 0.8);*/
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   font-weight: bold;
 }
@@ -298,7 +298,7 @@ header img {
 header .scroll-down {
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 20vh;
   text-align: center;
 }
 header .scroll-down .btn {
@@ -640,9 +640,44 @@ button.navbar-toggle{
 .navbar-inverse .navbar-toggle{
   font-size: 20px;
 }
-.fz20{font-size: 20px;}
-.ml20{margin-left: 20px;}
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.cl-effect-1 a::after{
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 li.active a::before,
+.cl-effect-1 li.active a::after{
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
 
 
+.fz40{font-size: 40px;}
+header .intro-content{width: 90%;}
 
 

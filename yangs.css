@@ -699,6 +699,7 @@ button.navbar-toggle{
   max-width: 480px;
   max-height: 360px;
   width: 48%;*/
+  width: 100%;
   background: #3085a3;
   text-align: center;
   cursor: pointer;
@@ -707,8 +708,9 @@ button.navbar-toggle{
 .grid figure img {
   position: relative;
   display: block;
-  min-height: 100%;
-  max-width: 100%;
+  width: 100%;
+ /* min-height: 100%;
+  max-width: 100%;*/
   opacity: 0.8;
 }
 

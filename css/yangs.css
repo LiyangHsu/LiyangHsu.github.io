@@ -86,9 +86,10 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
+  letter-spacing: 1.5px;
 }
 a {
   color: #41C4AB;
@@ -106,29 +107,17 @@ p {
   line-height: 1.5;
 }
 p.lead {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 24px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
 }
-@media (min-width: 481px) {
-  h1 {
-    font-size: 52px;
-  }
-  h2 {
-    font-size: 50px;
-  }
-}
+
 hr {
   max-width: 100px;
   border-top: 1px solid white;
@@ -169,9 +158,9 @@ hr.colored {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #41C4AB;
-  background-color: white;
-  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-weight: bold;
 }
 .navbar-default {
   background-color: #41C4AB;
@@ -181,7 +170,7 @@ hr.colored {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .navbar-default,
 .navbar-inverse {
@@ -200,6 +189,7 @@ hr.colored {
 .navbar-inverse .navbar-toggle:focus {
   background-color: white;
   color: #222;
+  transition: .3s;
 }
 .navbar-default .navbar-brand,
 .navbar-inverse .navbar-brand {
@@ -209,7 +199,7 @@ hr.colored {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 24px;
@@ -234,19 +224,10 @@ hr.colored {
   color: rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 768px) {
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus,
-  .navbar-inverse .navbar-nav > .active > a,
-  .navbar-inverse .navbar-nav > .active > a:hover,
-  .navbar-inverse .navbar-nav > .active > a:focus {
-    /*border-radius: 5px;*/
-  }
   .navbar-fixed-top.navbar-expanded {
-    padding: 30px 0;
+    padding: 10px 0;
   }
   .navbar-fixed-top {
-    padding: 15px 0;
     -webkit-transition: padding 0.5s;
     -moz-transition: padding 0.5s;
     transition: padding 0.5s;
@@ -271,7 +252,7 @@ header {
   display: block;
   height: auto;
   width: auto;
-  background-color: #222;
+  background-color: #000;
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -286,7 +267,7 @@ header .intro-content {
   position: relative;
 }
 header .brand-name {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
   text-transform: uppercase;
@@ -298,14 +279,11 @@ header .brand-name-subtext {
   line-height: 20px;
   font-weight: 300;
 }
-header img {
-  max-width: 150px;
-  max-height: 150px;
-}
+
 header .scroll-down {
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 5vh;
   text-align: center;
 }
 header .scroll-down .btn {
@@ -355,10 +333,7 @@ header .scroll-down .btn:hover {
     font-size: 30px;
     line-height: 30px;
   }
-  header img {
-    max-width: 250px;
-    max-height: 250px;
-  }
+
 }
 @media (min-width: 1025px) {
   header {
@@ -411,15 +386,7 @@ aside.cta-quote span.quote {
     background-attachment: fixed;
   }
 }
-.services .media i.fa {
-  height: 75px;
-  width: 75px;
-  line-height: 70px;
-  text-align: center;
-  border: 3px solid #222;
-  border-radius: 100%;
-  font-size: 30px;
-}
+
 #portfoliolist .mix {
   width: 31%;
   margin: 1%;
@@ -485,6 +452,9 @@ aside.cta-quote span.quote {
     width: 48%;
     margin: 1%;
   }
+  .navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 .floating-label-form-group {
   position: relative;
@@ -542,25 +512,25 @@ footer.footer {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding: 50px 0 20px;
+  padding: 20px 0px 10px 0px;
+  background-color: #333;
 }
 footer.footer a {
   color: rgba(255, 255, 255, 0.7);
 }
-footer.footer a:hover {
-  color: white;
-}
 footer.footer p {
-  font-size: 22px;
-}
-footer.footer .contact-details {
-  margin: 75px 0;
-}
-footer.footer .social {
-  margin-bottom: 75px;
+  font-size: 14px;
 }
 
-footer.footer .social .list-inline li {
+footer.footer .social .list-inline li a{
+  display: block;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  line-height: 46px;
+  border-radius: 50%;
+  color: #eee;
+  text-align: center;
   -webkit-transition-duration: 500ms;
   -moz-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -568,12 +538,11 @@ footer.footer .social .list-inline li {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-
-footer.footer .social .list-inline li:hover{
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  transform: scale(1.5);
+footer.footer .social .list-inline li a:hover{
+   background-color: #fff;
+   color: #333;
 }
+
 
 @media (min-width: 1025px) {
   footer.footer {
@@ -581,16 +550,18 @@ footer.footer .social .list-inline li:hover{
   }
 }
 .btn-outline-light {
-  color: white;
-  border: 1px solid white;
-  background: transparent;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
+  color: #333;
+  border: 1px solid #333;
+  /*background: transparent;*/
+  background-color: rgba(0,0,0, .1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .btn-outline-light:hover,
 .btn-outline-light:focus {
   color: #41C4AB;
+  border: 1px solid #41C4AB;
   background: white;
   outline: none;
 }
@@ -639,3 +610,173 @@ footer.footer .social .list-inline li:hover{
 .btn-full-width:focus {
   color: white;
 }
+/*------------------------------------------------*/
+/*Yangs CSS Fixed                                 */
+/*------------------------------------------------*/
+
+/*nav_hover_effect*/
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.cl-effect-1 a::after{
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 li.active a::before,
+.cl-effect-1 li.active a::after{
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+/*nav_hover_effect_end*/
+
+/*project_cards*/
+.grid {
+  position: relative;
+  margin: 0 auto;
+  /*padding: 1em 0 4em;*/
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  width: 100%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.grid figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+}
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.grid figure h2 {
+  font-size: 30px;
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  background-color: rgba(255,255,255, .2);
+}
+figure.effect-ruby {
+  background-color: #17819c;
+}
+figure.effect-ruby img {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+figure.effect-ruby:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+figure.effect-ruby h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+figure.effect-ruby p {
+  margin: 1em 0 0;
+  padding: 15px;
+  border: 1px solid #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0) scale(1.1);
+  transform: translate3d(0,20px,0) scale(1.1);
+} 
+figure.effect-ruby:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+figure.effect-ruby:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0) scale(1);
+  transform: translate3d(0,0,0) scale(1);
+}
+/*project_cards_end*/
+
+.navbar-nav {
+    margin: 0px -15px;
+}
+button.navbar-toggle{
+  outline: none;
+  border: none;
+  border-radius: none;
+}
+.navbar-inverse .navbar-toggle{
+  font-size: 20px;
+}
+.img-responsive{
+  width: 100%;
+  height: 100%;
+}
+.fz40{font-size: 40px;}
+header .intro-content{width: 90%;margin: auto;}
+
+

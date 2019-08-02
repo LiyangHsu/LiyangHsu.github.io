@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     // jQuery to collapse the navbar on scroll
     $(window).scroll(function() {
-        if ($("nav.navbar").offset().top > 200) {
+        if ($("nav.navbar").offset().top > 0) {
             $("nav.navbar").removeClass("navbar-expanded");
         } else {
             $("nav.navbar").addClass("navbar-expanded");

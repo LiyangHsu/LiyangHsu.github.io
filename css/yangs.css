@@ -84,8 +84,8 @@ a:focus {
   text-decoration: none;
 }
 p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 24px;
 }
 p.lead {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -97,6 +97,9 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+}
+h1{
+  font-size: 4em;
 }
 
 hr {
@@ -529,7 +532,7 @@ footer.footer .social .list-inline li a:hover{
   position: relative;
   margin: 0 auto;
   /*padding: 1em 0 4em;*/
-  max-width: 1000px;
+  max-width: 1280px;
   list-style: none;
   text-align: center;
 }
@@ -750,18 +753,19 @@ button.navbar-toggle{
 .fz40{font-size: 40px;}
 header .intro-content{
   width: 90%;
-  height: 70vh;
+  /*height: 70vh;*/
   overflow: hidden;
   margin: auto;
 }
-/*header .intro-content div{
-  height: 100%;
-}*/
+
+header .intro-content span{
+  font-size: 4em;
+}
 header .intro-content div.ver_align{
-  margin: auto;
+  /*margin: auto;
   position: absolute;
   top: 20%;
-  right: 0;
+  right: 0;*/
 }
 header .intro-content p{
   font-size: 16px;
@@ -769,10 +773,44 @@ header .intro-content p{
   color: #333;
   font-weight: 400;
 }
-.bg_w50{
-  background-color: rgba(255,255,255,.5);
+.brief{
+  width: 100%;
+  margin: auto;
+  /*margin-top: 30px;*/
+  color: #333;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  /*padding: 20px;*/
+  font-weight: 400;
+}
+.bg_w75{
+  background-color: rgba(255,255,255,.75);
 }
 .p15 {padding: 15px;}
+.fc_w{color: #fff;}
+.fw400{font-weight: 400;}
+.mb30{margin-bottom: 30px;}
+.y_box{
+  border: 1px solid #eaeaea;
+  /*background-color: #eee;*/
+  margin: 0px;
+  margin-bottom: 50px;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+.y_box h3{margin-top: 0;}
+.y_list{
+  border-bottom: 1px solid #eaeaea;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+}
+.y_list div:last-child{
+  border: none;
+  padding-bottom: 0;
+}
 
 @media (max-width: 767px) {
   header .intro-content{

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 html,body {
   height: 100%;
@@ -784,13 +785,15 @@ header .intro-content p{
   /*padding: 20px;*/
   font-weight: 400;
 }
-.bg_w75{
-  background-color: rgba(255,255,255,.75);
-}
+.bg_w75{background-color: rgba(255,255,255,.75);}
 .p15 {padding: 15px;}
+.mr15{margin-right: 15px;}
 .fc_w{color: #fff;}
 .fw400{font-weight: 400;}
 .mb30{margin-bottom: 30px;}
+.mb10{margin-bottom: 10px;}
+.ls0{letter-spacing: 0px;}
+
 .y_box{
   border: 1px solid #eaeaea;
   /*background-color: #eee;*/
@@ -807,9 +810,9 @@ header .intro-content p{
   padding-bottom: 10px;
 
 }
-.y_list div:last-child{
+.y_box .y_list:last-child{
   border: none;
-  padding-bottom: 0;
+  /*padding-bottom: 0;*/
 }
 
 @media (max-width: 767px) {

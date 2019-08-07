@@ -541,7 +541,8 @@ footer.footer .social .list-inline li a:hover{
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  /*margin: 10px 1%;*/
+  margin-bottom: 15px;
   width: 100%;
   background: #3085a3;
   text-align: center;
@@ -554,7 +555,7 @@ footer.footer .social .list-inline li a:hover{
   opacity: 0.8;
 }
 .grid figure figcaption {
-  padding: 2em;
+  padding: 20px 10px 10px 10px;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -796,11 +797,9 @@ header .intro-content p{
 
 .y_box{
   border: 1px solid #eaeaea;
-  /*background-color: #eee;*/
   margin: 0px;
   margin-bottom: 50px;
-  padding: 15px;
-  padding-bottom: 0px;
+  padding: 0px 15px;
 }
 .y_box h3{margin-top: 0;}
 .y_list{
@@ -813,6 +812,28 @@ header .intro-content p{
 .y_box .y_list:last-child{
   border: none;
   /*padding-bottom: 0;*/
+}
+.controls button{
+  /*padding: 10px;*/
+  /*width: 130px;*/
+  padding: 12px 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: rgba(0,0,0, .1);
+  color: #333;
+  border: 1px solid #333;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+.controls button:hover{
+  color: #41C4AB;
+  border: 1px solid #41C4AB;
+  background: white;
+  outline: none;
+}
+.controls button:focus{
+  outline: none;
 }
 
 @media (max-width: 767px) {

@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     // jQuery to collapse the navbar on scroll
     $(window).scroll(function() {
-        if ($("nav.navbar").offset().top > 0) {
+        if ($("nav.navbar").offset().top > 200) {
             $("nav.navbar").removeClass("navbar-expanded");
         } else {
             $("nav.navbar").addClass("navbar-expanded");
@@ -84,8 +84,3 @@ $(document).ready(function() {
     filterList.init();
 
 })(jQuery); // End of use strict
-
-
-
-
-

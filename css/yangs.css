@@ -600,6 +600,7 @@ footer.footer .social .list-inline li a:hover{
 }
 figure.effect-ruby {
   background-color: #17819c;
+  /*background-color: #222;*/
 }
 figure.effect-ruby img {
   opacity: 0.7;
@@ -609,7 +610,7 @@ figure.effect-ruby img {
   transform: scale(1.15);
 }
 figure.effect-ruby:hover img {
-  opacity: 0.5;
+  opacity: 0.2;
   -webkit-transform: scale(1);
   transform: scale(1);
 }

@@ -6,10 +6,10 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Portfolio - Liyang</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- <link rel="stylesheet" href="./filter.css"> -->
     <link rel="stylesheet" href="css/yangs.css">
 </head>
@@ -96,9 +96,9 @@
                     </p>
                 </div> -->
             </div>
-           
+
             <div class="row">
-                
+
                 <div class="col-lg-6 wow fadeIn">
                     <h3>Experience & Education</h3>
                     <div class="y_box">
@@ -140,7 +140,7 @@
                         <div class="row y_list wow fadeIn">
                             <div class="col-md-12">
                                 <p class="m0">
-                                    Adobe Photoshop, Illustrator, Lightroom, <br>  
+                                    Adobe Photoshop, Illustrator, Lightroom, <br>
                                     Axure RP, Sketch, Flinto,<br>
                                     Sublime, HTML5, CSS3, RWD, Jquery
                                 </p>
@@ -201,12 +201,12 @@
             <h2>Portfolio</h2>
             <div class="row mb30">
                 <div class="controls">
-                    <button type="button" class="control" data-filter="all">All</button>
-                    <button type="button" class="control" data-filter=".logo">Logo</button>
-                    <button type="button" class="control" data-filter=".web">Web</button>
-                    <button type="button" class="control" data-filter=".app">App</button>
-                    <button type="button" class="control" data-filter=".guide">guideline</button>
-                    <button type="button" class="control" data-filter=".other">Other</button>
+                    <button type="button" class="control" data-mixitup-control data-filter="all">All</button>
+                    <button type="button" class="control" data-mixitup-control data-filter=".logo">Logo</button>
+                    <button type="button" class="control" data-mixitup-control data-filter=".web">Web</button>
+                    <button type="button" class="control" data-mixitup-control data-filter=".app">App</button>
+                    <button type="button" class="control" data-mixitup-control data-filter=".guide">guideline</button>
+                    <button type="button" class="control" data-mixitup-control data-filter=".other">Other</button>
                 </div>
             </div>
 
@@ -218,11 +218,27 @@
                             <figcaption>
                                 <h3>Elite Acquisition</h3>
                                 <p>Provide new recruits to fill in and deliver online resumes.</p>
-                                <a href="#"></a>
-                            </figcaption>           
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_elite"></a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
+                <div class="modal m_elite" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_elite">Elite Acquisition</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn app guide" data-ref="filterTA" data-wow-delay=".2s">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -230,11 +246,27 @@
                             <figcaption>
                                 <h3>E-trader</h3>
                                 <p>Securities trading order system.</p>
-                                <a href="#">View more</a>
-                            </figcaption>  
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_etrader" data-toggle="modal" data-target=".m_elite">View more</a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
+                <div class="modal m_etrader" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_etrader">E-trader</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn app web" data-ref="filterTA" data-wow-delay=".4s">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -242,13 +274,27 @@
                             <figcaption>
                                 <h3>E-Customer Service</h3>
                                 <p>AI chatbot provides basic customer service.</p>
-                                <a href="#">View more</a>
-                            </figcaption>  
-                                    
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_ecustomer">View more</a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
-                
+                <div class="modal m_ecustomer" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_ecustomer">E-Customer Service</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn app guide" data-ref="filterTA">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -256,11 +302,27 @@
                             <figcaption>
                                 <h3>OA Mobile</h3>
                                 <p>Outgoing office and instant signing documents are not restricted.</p>
-                                <a href="#"></a>
-                            </figcaption>          
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_oa"></a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
+                <div class="modal m_oa" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_oa">OA Mobile</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn logo web" data-ref="filterTA" data-wow-delay=".2s">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -268,11 +330,26 @@
                             <figcaption>
                                 <h3>Kitten Bean Art Studio</h3>
                                 <p>Offering Multiple arts program in Taipei.</p>
-                                <a href="#"></a>
-                            </figcaption>          
-                        </figure>
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_kb"></a>
+                            </figcaption>                        </figure>
                     </div>
                 </div>
+                <div class="modal m_kb" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_kb">Kitten Bean Art Studio</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn logo web" data-ref="filterTA" data-wow-delay=".4s">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -280,9 +357,24 @@
                             <figcaption>
                                 <h3>Grass Wood Wedding Studio</h3>
                                 <p>Wedding photography in Zhongli.</p>
-                                <a href="#"></a>
-                            </figcaption>           
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_gw"></a>
+                            </figcaption>
                         </figure>
+                    </div>
+                </div>
+                <div class="modal m_gw" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_gw">Grass Wood Wedding Studio</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -293,11 +385,27 @@
                             <figcaption>
                                 <h3>ATM Bureau</h3>
                                 <p>ATM transaction space design.</p>
-                                <a href="#"></a>
-                            </figcaption>           
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_atm"></a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
+                <div class="modal m_atm" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_atm">ATM Bureau</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn logo web" data-ref="filterTA" data-wow-delay=".2s">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -305,11 +413,27 @@
                             <figcaption>
                                 <h3>Kitten Flora</h3>
                                 <p>Provide floral courses and product reservations in Taipei.</p>
-                                <a href="#"></a>
-                            </figcaption>           
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_kf"></a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
+                <div class="modal m_kf" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_kf">Kitten Flora</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn web app" data-ref="filterTA" data-wow-delay=".4s">
                     <div class="grid">
                         <figure class="effect-ruby">
@@ -317,14 +441,29 @@
                             <figcaption>
                                 <h3>Lottery Game</h3>
                                 <p>Spring Festival draw with games.</p>
-                                <a href="#"></a>
-                            </figcaption>           
+                                <a href="javascript:;" data-toggle="modal" data-target=".m_lottery"></a>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
-                
+                <div class="modal m_lottery" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4" id="m_lottery">Lottery Game</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="proBox">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div><!-- row -->
-           
+
         </div>
     </section>
 
@@ -372,7 +511,7 @@
                         </li>
                     </ul>
                 </div>
-               
+
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -381,15 +520,16 @@
             </div>
         </div>
     </footer>
-  
+
 </body>
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/yangs.js"></script>
 
@@ -401,6 +541,12 @@
             target: '[data-ref~="filterTA"]'
         }
     });
+
+    // 防止bs modal後，filter元件高度為0
+    mixitup(container, {
+        selectors: {
+            control: '[data-mixitup-control]'
+    }
 </script>
 
 

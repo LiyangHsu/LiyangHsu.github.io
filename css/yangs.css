@@ -831,14 +831,51 @@ header .intro-content p{
 .controls button:focus{
   outline: none;
 }
+
+/*portfolio*/
+.modal-dialog{
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+  overflow: hidden;
+}
+.modal-content{
+  border: none;
+}
+.modal-header .close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  outline: none;
+}
+button.close > span{
+  font-size: 30px;
+}
+.proBox{
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+.proBox iframe{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 @media (max-width: 768px) {
   #canvas-holder canvas#radarChart{
     width: 100%!important;
     height: auto!important;
     margin: 40px 0px;
     /*margin-top: 40px;*/
-    
   }
+
 }
 
 @media (max-width: 767px) {
@@ -876,16 +913,14 @@ header .intro-content p{
   .container > .navbar-header{
     margin-left: 0;
   }
-  
-}
+  .modal-dialog{
+    width: auto;
+  }
 
-/*portfolio*/
-.p_title{
-  font-size: 30px;
-}
-.p_explain{
 
 }
+
+
 
 .bg_w75{background-color: rgba(255,255,255,.75);}
 .p15 {padding: 15px;}

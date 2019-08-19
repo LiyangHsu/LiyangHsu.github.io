@@ -78,7 +78,7 @@
                 <div class="col-lg-6 ls0 wow fadeIn">
                     <h3>Hi, I am Li-Yang Hsu.</h3>
                     <p>
-                        Hello, I'm Li-Yang. I have been an UI/UX designer for 4 years. I have rich experience in project process development and cooperation with engineers. I recently completed some works such as Securities Order App, AI Customer Service Web pages, and also establish the project design guidelines. My working ability ranging from interviews, wireframes, UI flows, design prototypes, to slice images and build websites.
+                        Hello, I'm Li-Yang. I have been an UI/UX designer for 4 years. I have rich experience in project process development and cooperation with engineers. I recently completed some works such as Securities Order App, AI Customer Service Web pages, and also establish the project design guidelines. My working ability ranging from requirement analysis, wireframes, UI flows, design prototypes, to slice images and build websites.
                     </p>
                 </div>
                 <div class="col-lg-6 ls0 wow fadeIn">
@@ -87,7 +87,7 @@
                         I like to plan a trip or event in detail, even if the plan can't keep up with the changes.
                         I enjoy relaxing on the riverside and I am also happy to run the boss in the race.
                         I occasionally go to the flower market in the early morning, and tie the flowers that are as good as the day.
-                        Good design comes from the bit of life, into life, and design with heart.
+                        Good design comes from everything in life, enjoy life, and design with heart.
                     </p>
                 </div>
                 <!-- <div class="col-lg-6 wow fadeIn">
@@ -180,7 +180,7 @@
                         I like to plan a trip or event in detail, even if the plan can't keep up with the changes.
                         I enjoy relaxing on the riverside and I am also happy to run the boss in the race.
                         I occasionally go to the flower market in the early morning, and tie the flowers that are as good as the day.
-                        Good design comes from the bit of life, into life, and design with heart.
+                        Good design comes from the bit of life, enjoy life, and design with heart.
                     </p>
                 </div>
                 <div class="col-lg-6 wow fadeIn">
@@ -188,7 +188,7 @@
                         我喜歡詳盡的規劃一場旅程或活動，即使有時計劃趕不上變化。  <br>
                         我享受輕鬆在河濱慢跑，也樂於在賽事中挑戰自己，跑上凸台。  <br>
                         我偶爾會在清晨前往花市，綁一束跟那天一樣美好、相稱的花。 <br>
-                        好的設計來自於生活的點滴，走進生活，用心設計。
+                        好的設計來自於生活的點滴，用心生活，用心設計。
                     </p>
                 </div>
             </div> -->
@@ -538,15 +538,14 @@
 
     var mixer = mixitup(containerEl, {
         selectors: {
-            target: '[data-ref~="filterTA"]'
+            target: '[data-ref~="filterTA"]',
+            
+            // 防止bs modal後，filter元件高度為0
+            control: '[data-mixitup-control]',
         }
     });
 
-    // 防止bs modal後，filter元件高度為0
-    mixitup(container, {
-        selectors: {
-            control: '[data-mixitup-control]'
-    }
+    
 </script>
 
 

@@ -533,19 +533,17 @@ footer.footer .social .list-inline li a:hover{
 .grid {
   position: relative;
   margin: 0 auto;
-  /*padding: 1em 0 4em;*/
   max-width: 1280px;
   list-style: none;
   text-align: center;
+  overflow: hidden;
 }
 .grid figure {
   position: relative;
   float: left;
   overflow: hidden;
-  /*margin: 10px 1%;*/
   margin-bottom: 15px;
   width: 100%;
-  background: #3085a3;
   text-align: center;
   cursor: pointer;
 }
@@ -556,12 +554,12 @@ footer.footer .social .list-inline li a:hover{
   opacity: 0.8;
 }
 .grid figure figcaption {
-  padding: 30px;
+  padding: 50px 15px;
   color: #fff;
-  /*text-transform: uppercase;*/
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  overflow: hidden;
 }
 .grid figure figcaption::before,
 .grid figure figcaption::after {
@@ -599,18 +597,18 @@ footer.footer .social .list-inline li a:hover{
   background-color: rgba(255,255,255, .2);
 }
 figure.effect-ruby {
-  background-color: #17819c;
-  /*background-color: #222;*/
+  /*background-color: #17819c;*/
+  background-color: #222;
 }
 figure.effect-ruby img {
-  opacity: 0.7;
+  opacity: 0.6;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
 figure.effect-ruby:hover img {
-  opacity: 0.2;
+  opacity: 0.1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -619,10 +617,14 @@ figure.effect-ruby h3 {
   transition: transform 0.35s;
   -webkit-transform: translate3d(0,20px,0);
   transform: translate3d(0,20px,0);
+  font-weight: bold;
+  text-shadow: 0px 0px 16px rgba(0,0,0, .7);
+  transition: .3s;
 }
 figure.effect-ruby p {
   margin: 1em 0 0;
   padding: 15px;
+  margin: 30px;
   border: 1px solid #fff;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -633,6 +635,7 @@ figure.effect-ruby p {
 figure.effect-ruby:hover h3 {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  transition: .3s;
 }
 figure.effect-ruby:hover p {
   opacity: 1;
@@ -741,7 +744,6 @@ figure.effect-ruby:hover p {
 
 /*skill_canvas*/
 
-
 .navbar-nav {
     margin: 0px -15px;
 }
@@ -760,19 +762,12 @@ button.navbar-toggle{
 .fz40{font-size: 40px;}
 header .intro-content{
   width: 90%;
-  /*height: 70vh;*/
   overflow: hidden;
   margin: auto;
 }
 
 header .intro-content span{
   font-size: 4em;
-}
-header .intro-content div.ver_align{
-  /*margin: auto;
-  position: absolute;
-  top: 20%;
-  right: 0;*/
 }
 header .intro-content p{
   font-size: 16px;
@@ -783,12 +778,10 @@ header .intro-content p{
 .brief{
   width: 100%;
   margin: auto;
-  /*margin-top: 30px;*/
   color: #333;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 30px;
-  /*padding: 20px;*/
   font-weight: 400;
 }
 
@@ -807,11 +800,8 @@ header .intro-content p{
 }
 .y_box .y_list:last-child{
   border: none;
-  /*padding-bottom: 0;*/
 }
 .controls button{
-  /*padding: 10px;*/
-  /*width: 130px;*/
   padding: 12px 18px;
   text-transform: uppercase;
   font-weight: 900;
@@ -841,6 +831,15 @@ header .intro-content p{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
   overflow: hidden;
 }
+.modal-header{
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+.modal-title{
+  width: calc(100% - 44px);
+  font-size: 30px;
+  font-weight: bold;
+}
 .modal-content{
   border: none;
 }
@@ -858,6 +857,7 @@ header .intro-content p{
 }
 button.close > span{
   font-size: 30px;
+  text-shadow: none;
 }
 .proBox{
   width: 100%;
@@ -877,7 +877,6 @@ button.close > span{
     width: 100%!important;
     height: auto!important;
     margin: 40px 0px;
-    /*margin-top: 40px;*/
   }
 
 }
@@ -922,6 +921,24 @@ button.close > span{
   }
 
 
+}
+@media (max-width: 600px) {
+  .modal-title{
+    font-size: 24px;
+  }
+  .modal-header .close{
+    width: 65px;
+    height: 65px;
+  }
+}
+@media (max-width: 480px) {
+  .modal-title{
+    font-size: 20px;
+  }
+  .modal-header .close{
+    width: 60px;
+    height: 60px;
+  }
 }
 
 

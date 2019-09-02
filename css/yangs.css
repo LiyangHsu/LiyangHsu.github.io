@@ -785,7 +785,6 @@ header .intro-content p{
   font-weight: 400;
 }
 
-
 .y_box{
   border: 1px solid #eaeaea;
   margin: 0px;
@@ -941,18 +940,24 @@ button.close > span{
   }
 }
 
-.lan_switch {
-  position: absolute;
-  right: 40px;
-  top: 15px;
+.lan_switch{
+  display: block;
+  height: 50px;
+  padding-top: 18px;
   transition: .3s;
 }
+.lan_switch a{
+  height: 100%;
+}
+
 .lan_switch img{
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+
 }
 .lan_switch.lan_position{
-  top: 25px;
+  padding-top: 18px;
   transition: .3s;
 }
 

@@ -20,8 +20,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($("nav.navbar").offset().top > 200) {
             $("nav.navbar").removeClass("navbar-expanded");
+            $(".lan_switch").removeClass("lan_position");
         } else {
             $("nav.navbar").addClass("navbar-expanded");
+            $(".lan_switch").addClass("lan_position");
         }
     });
 

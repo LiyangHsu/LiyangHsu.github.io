@@ -941,18 +941,21 @@ button.close > span{
   }
 }
 
-/*.lan_switch {
+.lan_switch {
   position: absolute;
   right: 40px;
   top: 15px;
+  transition: .3s;
 }
 .lan_switch img{
   height: 30px;
   width: 30px;
-}*/
-
-.controls button{
 }
+.lan_switch.lan_position{
+  top: 25px;
+  transition: .3s;
+}
+
 
 
 

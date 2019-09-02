@@ -941,6 +941,19 @@ button.close > span{
   }
 }
 
+/*.lan_switch {
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+.lan_switch img{
+  height: 30px;
+  width: 30px;
+}*/
+
+.controls button{
+}
+
 
 
 .bg_w75{background-color: rgba(255,255,255,.75);}

@@ -1,6 +1,7 @@
 // Load WOW.js on non-touch devices
 var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
+    
     if (isPhoneDevice) {
         //mobile
     } else {

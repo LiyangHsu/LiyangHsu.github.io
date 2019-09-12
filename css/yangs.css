@@ -965,8 +965,10 @@ button.close > span{
   padding-top: 18px;
   transition: .3s;
 }
-.lan_switch a{
+.lan_switch a,
+.lan_switch a:hover{
   height: 100%;
+  text-decoration: none;
 }
 
 .lan_switch img{
